@@ -7,10 +7,11 @@ import Login from "./pages/login"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Completed from "./pages/Completed"
 import { FarmerDetails } from "./pages/farmerDetails"
-import CreateListing from "./pages/CreateListing"
+// import CreateListing from "./pages/CreateListing"
 import FarmerProfile from "./pages/FarmerProfile"
 import { BuyerDetails } from "./pages/BuyerDetails"
 import BuyerProfile from "./pages/BuyerProfile"
+import { EnquirePage } from "./pages/Enqurie"
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/farmerProfile" element={<FarmerProfile/>} />
           <Route path="/buyer-details" element={<BuyerDetails/>} />
           <Route path="/buyerProfile" element={<BuyerProfile/>} />
+          <Route path="/enqurie" element={<EnquirePage/>} />
         </Routes>
       </BrowserRouter>
 
